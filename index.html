@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minimal</title>
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div class="container">
+                <div class="header__body">
+                    <a href="#" class="header__logo">
+                        <img src="/img/logo.png" alt="" />
+                        <div class="header__logo-title">Minimal</div>
+                    </a>
+                    <ul class="header__links">
+                        <li class="header__link">
+                            <a href="#">process</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">projects</a>
+                        </li>
+                        <li class="header__link"><a href="#">team</a></li>
+                        <li class="header__link">
+                            <a href="#">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+            <div class="main__body">
+                <div class="main__video">
+                    <div class="video__text">
+                        <div class="video__title">
+                            Making brands stand out is our obsession
+                        </div>
+                        <div class="video__subtitle">
+                            Let us help your brand stand out.
+                        </div>
+                    </div>
+                    <source>
+                    <video src="/videos/main.mp4" autoplay loop muted></video>
+                    <img src="/img/video-bg.png" alt="">
+                    </source>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <section class="main__overview">
+                <div class="container">
+                    <div class="overview__text">
+                        Minimalist is a full-service digital creative agency located in Ontorio Canada. We focus on design,
+                        consulting, technology, and photography. We’ve been building unique digital products, platforms, and
+                        experiences for the past 6 years. Let us help your company grow.
+                    </div>
+                    <button class="overview__btn">
+                        Get in Touch
+                    </button>
+                </div>
+            </section>
+        </div>
+        <section class="main__brands">
+            <div class="container">
+                <div class="brands__body">
+                    <div class="brands__title title">How we make brands thrive</div>
+                    <div class="brands__row">
+                        <div class="brands__item">
+                            <div class="brands__img">
+                                <img src="img/brands/brands1.png" alt="">
+                            </div>
+                            <div class="brands__name">SET a target</div>
+                            <div class="brands__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Suspendisse varius enim in eros elementum tristique.</div>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__img">
+                                <img src="img/brands/brands2.png" alt="">
+                            </div>
+                            <div class="brands__name">design a solution</div>
+                            <div class="brands__desc">Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                                commodo diam libero vitae erat.</div>
+                        </div>
+                        <div class="brands__item">
+                            <div class="brands__img">
+                                <img src="img/brands/brands3.png" alt="">
+                            </div>
+                            <div class="brands__name">track the progress</div>
+                            <div class="brands__desc">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                                Nunc ut sem vitae risus tristique posuere.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main__projects">
+            <div class="container">
+                <div class="projects__body">
+                    <div class="projects__title title">
+                        Recent projects
+                    </div>
+                    <div class="projects__row">
+                        <template data-project-template>
+                            <div class="projects__item">
+                                <div class="projects__image">
+                                    <img src="" alt="" data-project-image>
+                                </div>
+                                <div class="projects__name"></div>
+                                <div class="projects__type"></div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
