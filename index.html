@@ -15,16 +15,19 @@
         <div class="wrapper">
             <div class="container">
                 <div class="header__body">
+                    <div class="header__burger">
+                        
+                    </div>
                     <a href="#" class="header__logo">
-                        <img src="/img/logo.png" alt="" />
+                        <img src="img/logo.png" alt="" />
                         <div class="header__logo-title">Minimal</div>
                     </a>
                     <ul class="header__links">
                         <li class="header__link">
-                            <a href="#">process</a>
+                            <a href="#brands">process</a>
                         </li>
                         <li class="header__link">
-                            <a href="#">projects</a>
+                            <a href="#projects">projects</a>
                         </li>
                         <li class="header__link"><a href="#">team</a></li>
                         <li class="header__link">
@@ -59,8 +62,10 @@
             <section class="main__overview">
                 <div class="container">
                     <div class="overview__text">
-                        Minimalist is a full-service digital creative agency located in Ontorio Canada. We focus on design,
-                        consulting, technology, and photography. We’ve been building unique digital products, platforms, and
+                        Minimalist is a full-service digital creative agency located in Ontorio Canada. We focus on
+                        design,
+                        consulting, technology, and photography. We’ve been building unique digital products, platforms,
+                        and
                         experiences for the past 6 years. Let us help your company grow.
                     </div>
                     <button class="overview__btn">
@@ -69,7 +74,7 @@
                 </div>
             </section>
         </div>
-        <section class="main__brands">
+        <section class="main__brands" id="brands">
             <div class="container">
                 <div class="brands__body">
                     <div class="brands__title title">How we make brands thrive</div>
@@ -103,27 +108,104 @@
                 </div>
             </div>
         </section>
-        <section class="main__projects">
+        <section class="main__projects" id='projects'>
             <div class="container">
                 <div class="projects__body">
                     <div class="projects__title title">
                         Recent projects
                     </div>
-                    <div class="projects__row">
+                    <div class="projects__row" data-projects-container>
                         <template data-project-template>
                             <div class="projects__item">
                                 <div class="projects__image">
-                                    <img src="" alt="" data-project-image>
+                                    <img src="/js/img/IMAGE-1.png" alt="" data-project-image>
                                 </div>
-                                <div class="projects__name"></div>
-                                <div class="projects__type"></div>
+                                <div class="projects__name" data-project-name></div>
+                                <div class="projects__type" data-project-type></div>
                             </div>
                         </template>
                     </div>
+                    <button class="load__projects">
+                        Load projects
+                    </button>
                 </div>
             </div>
         </section>
+        <section class="main__team">
+            <div class="container">
+                <div class="team__body">
+                    <div class="team__title title">Our Team</div>
+                    <div class="team__row">
+                        <div class="team__item">
+                            <div class="team__item-img">
+                                <img src="/img/team/IMAGE.png" alt="">
+                            </div>
+                            <div class="team__item-text">
+                                <div class="team__header">Ron Swanson</div>
+                                <div class="team__position">Founder</div>
+                                <div class="team__item-icons">
+                                    <div class="team__icons-link">
+                                        <img src="/img/team/icons/IMAGE-1.png" alt="">
+                                        <img src="/img/team/icons/IMAGE.png" alt="">
+                                        <img src="/img/team/icons/IMAGE-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__item-img">
+                                <img src="/img/team/IMAGE-1.png" alt="">
+                            </div>
+                            <div class="team__item-text">
+                                <div class="team__header">Julia Depish</div>
+                                <div class="team__position">Marketing</div>
+                                <div class="team__item-icons">
+                                    <div class="team__icons-link">
+                                        <img src="/img/team/icons/IMAGE-1.png" alt="">
+                                        <img src="/img/team/icons/IMAGE.png" alt="">
+                                        <img src="/img/team/icons/IMAGE-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__item-img">
+                                <img src="/img/team/IMAGE-2.png" alt="">
+                            </div>
+                            <div class="team__item-text">
+                                <div class="team__header">Danny Devry</div>
+                                <div class="team__position">Designer</div>
+                                <div class="team__item-icons">
+                                    <div class="team__icons-link">
+                                        <img src="/img/team/icons/IMAGE-1.png" alt="">
+                                        <img src="/img/team/icons/IMAGE.png" alt="">
+                                        <img src="/img/team/icons/IMAGE-2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <div class="team__item-img">
+                                <img src="/img/team/IMAGE-3.png" alt="">
+                            </div>
+                            <div class="team__item-text">
+                                <div class="team__header">Lisa Smith</div>
+                                <div class="team__position">Developer</div>
+                                <div class="team__icons-link">
+                                    <img src="/img/team/icons/IMAGE-1.png" alt="">
+                                    <img src="/img/team/icons/IMAGE.png" alt="">
+                                    <img src="/img/team/icons/IMAGE-2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
+
+
     <script src="js/script.js"></script>
 </body>
 
